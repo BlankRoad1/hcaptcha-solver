@@ -3,4 +3,4 @@ unlike every other kid over here who claims to drop hcaptcha solver in github bu
 
 # All you need to do is wait and put a star on my repository.
 
-## If you got time, hit me up on my email, i need help with these huge datasets organizing for the hcaptcha.
+## If you got time, hit me up on my discord: Zerf#7071 , i need help with these huge datasets organizing for the hcaptcha.
