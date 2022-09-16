@@ -17,6 +17,6 @@ unlike every other kid over here who claims to drop hcaptcha solver in github bu
 
 # All you need to do is wait and put a star on my repository.
 
-## If you got time, hit me up on my discord: Zerf#7071 
+## If you got hcaptcha datasets, and would like to donate or give them to me for free, hit me up on my discord: Zerf#7071 
 
 [Discord Server](https://discord.gg/3br2gc6hCu)
