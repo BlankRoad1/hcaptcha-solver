@@ -2,8 +2,11 @@
 unlike every other kid over here who claims to drop hcaptcha solver in github but ends up sharing a code with library of paid solver. I am bringing a free hcaptcha solver. which will get the token or capkey (through python requests) without the need to open a browser and solve the captcha. 
 
 > I modifed a couple of github codes. The fastest one i could come across was by this guy=  https://github.com/QIN2DIM/hcaptcha-challenger 
+
 > His models dont have enough images, But still it works alot better than others. 
+
 > Soon ! Today or tomorrow or maybe after tomorrow, i will be sharing with y'all the source code. 
+
 > Solves captcha in 10 Seconds.
 
 ![success_test1](https://user-images.githubusercontent.com/105941365/190708068-4bb95bdd-b6a2-41a6-9e9b-244cdc69c181.png)
