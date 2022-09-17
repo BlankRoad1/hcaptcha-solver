@@ -124,9 +124,13 @@ class Challenge:
         #******************************************************************************
 
 
-        #MAX SSL ERROR Occurs here
-        time.sleep(1.5)
-        resp = self.http_client.request(method, url, headers=headers, data=data, proxies={"http": f"http://{self._http_proxy}", "https": f"http://{self._http_proxy}"})
+        #MAX SSL ERROR Occurs here        
+        if self._http_proxy == "":
+            resp = self.http_client.request(method, url, headers=headers, data=data)
+        else:
+            time.sleep(1.5)
+            resp = self.http_client.request(method, url, headers=headers, data=data, proxies={"http": f"http://{self._http_proxy}", "https": f"http://{self._http_proxy}"})
+
 
         if resp.status_code == 429:
             raise ApiError(resp.status_code, resp.text)
