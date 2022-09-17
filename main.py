@@ -8,7 +8,7 @@ from modules.console import Console
 
 # discord
 website_key_captcha="4c672d35-0701-42b2-88c3-78380b0db560"
-website_URL_captcha="discord.com"
+website_URL_captcha="http://discord.com"
 
 
 proxypath = "./data/proxies.txt"
