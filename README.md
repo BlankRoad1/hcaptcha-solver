@@ -15,7 +15,7 @@ Rather than opening a browser and solving hcaptcha, this code **sovles hcaptcha 
 - To test the captcha solver, Run the file named **run_program.bat**.
 
 ## Some updates you need to do manually
-You need to **keep objects.yaml updated **incase any new models has been added.
+You need to **keep objects.yaml updated** incase any new models has been added.
 1. Goto `modules > ai_finder`, open objects.yaml with notepad. 
 2. Goto [updated objects.yaml](https://raw.githubusercontent.com/QIN2DIM/hcaptcha-challenger/main/src/objects.yaml "updated objects.yaml").
 3. Compare the **last lines** of the link with objects.yaml file. If they are different, add them to the end of objects.yaml and save.
