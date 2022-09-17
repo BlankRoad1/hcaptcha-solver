@@ -21,7 +21,6 @@ TASK_IMAGE_START_POS = (11, 130)
 TASK_IMAGE_PADDING = (5, 6)
 VERIFY_BTN_POS = (314, 559)
 
-
 class Challenge:
     base_url = "https://hcaptcha.com"
     frame_base_url = "https://newassets.hcaptcha.com"
@@ -43,7 +42,7 @@ class Challenge:
         self.widget_id = widget_id
         self.http_client = http_client
         self.agent = agent
-        self._http_proxy = http_proxy #parse_proxy_string(http_proxy)
+        self._http_proxy = http_proxy
 
         self.key = None
         self.type = None
@@ -65,8 +64,6 @@ class Challenge:
     def solve(self, answers):
         if self.token:
             return self.token
-
-        self._simulate_solve(answers)
 
         resp = self._request(
             method="POST",
@@ -306,50 +303,3 @@ class Challenge:
             1, # document.documentElement.clientWidth / window.innerWidth
             self._time.ms_time()
         ])
-
-    def _simulate_solve(self, answers):
-        total_pages = max(1, int(len(self.tasks)/TASKS_PER_PAGE))
-        cursor_pos = (
-            random.randint(1, 5),
-            random.randint(300, 350)
-        )
-
-        for page in range(total_pages):
-            page_tasks = self.tasks[page*TASKS_PER_PAGE:(page+1)*TASKS_PER_PAGE]
-            for task_index, task in enumerate(page_tasks):
-                if not task.key in answers and not task in answers:
-                    continue
-                task_pos = (
-                    (TASK_IMAGE_SIZE[0] * int(task_index % TASKS_PER_ROW))
-                        + TASK_IMAGE_PADDING[0] * int(task_index % TASKS_PER_ROW)
-                        + random.randint(10, TASK_IMAGE_SIZE[0])
-                        + TASK_IMAGE_START_POS[0],
-                    (TASK_IMAGE_SIZE[1] * int(task_index / TASKS_PER_ROW))
-                        + TASK_IMAGE_PADDING[1] * int(task_index / TASKS_PER_ROW)
-                        + random.randint(10, TASK_IMAGE_SIZE[1])
-                        + TASK_IMAGE_START_POS[1],
-                )
-                for event in gen_mouse_move(cursor_pos, task_pos, self._time,
-                        offsetBoundaryX=0, offsetBoundaryY=0, leftBoundary=0,
-                        rightBoundary=FRAME_SIZE[0], upBoundary=FRAME_SIZE[1],
-                        downBoundary=0):
-                    self._frame.record_event("mm", event)
-                # TODO: add time delay for mouse down and mouse up
-                self._frame.record_event("md", event)
-                self._frame.record_event("mu", event)
-                cursor_pos = task_pos
-            
-            # click verify/next/skip btn
-            btn_pos = (
-                VERIFY_BTN_POS[0] + random.randint(5, 50),
-                VERIFY_BTN_POS[1] + random.randint(5, 15),
-            )
-            for event in gen_mouse_move(cursor_pos, btn_pos, self._time,
-                        offsetBoundaryX=0, offsetBoundaryY=0, leftBoundary=0,
-                        rightBoundary=FRAME_SIZE[0], upBoundary=FRAME_SIZE[1],
-                        downBoundary=0):
-                self._frame.record_event("mm", event)
-            # TODO: add time delay for mouse down and mouse up
-            self._frame.record_event("md", event)
-            self._frame.record_event("mu", event)
-            cursor_pos = btn_pos
