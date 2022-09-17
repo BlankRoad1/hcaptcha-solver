@@ -18,7 +18,7 @@ clear = True
 count = 1
 while True:
     if open(proxypath,"r").read() == '':
-                proxys = "127.0.0.1"
+                proxys = ""
     else:
         proxys = random.choice(proxy)
         
