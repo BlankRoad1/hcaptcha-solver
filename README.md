@@ -6,7 +6,6 @@ Rather than opening a browser and solving hcaptcha, this code **sovles hcaptcha 
 
 ## Installation
 - Run the file named **install_requirements.bat**, it will install all the necessary `requirements` for this code.
-- **Dont touch config.ini**
 - Run the file named **downloadorUpdate_models.bat**, it will download all the `models for the ai captcha solver.`
 - you need a chromedriver. Based on your chrome version:
        Goto your chrome installation folder, usually its installed in `C:\Program Files\Google\Chrome\Application`. You must find a folder named something like this 105.0.5195.127, it can be different for you. Thats your chrome version. 
