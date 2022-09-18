@@ -98,4 +98,3 @@ class CaptchaSolver:
         except hcaptcha.ApiError as e:
             #This is where the captcha fails. means its solved but wrong images are chosen
             Console.debug(f"[-] Captcha solved but wrong, Retrying...")
-            time.sleep(2)
