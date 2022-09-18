@@ -10,9 +10,6 @@ import requests
 from modules.ai_finder.solutions import  resnet, yolo
 from pathlib import Path
 
-from PIL import Image
-from io import BytesIO
-
 
 path_objects_yaml = './modules/ai_finder/objects.yaml'
 
