@@ -2,14 +2,12 @@ from colorama import Fore, init;init()
 import os, threading, time, json, keyboard, datetime, discord
 from pystyle import *
 
-config = json.load(open("./data/config.json"))
 lock = threading.Lock()
 
 class Console:
 
     @staticmethod
     def debug(content: str):
-        if config['debug'] == True:
             if content != None:
                 content = content.replace('[+]', f'[{Fore.LIGHTGREEN_EX} + {Fore.RESET}]{Fore.CYAN}').replace('[*]', f'[{Fore.LIGHTMAGENTA_EX} * {Fore.RESET}]{Fore.CYAN}').replace('[/]', f'[{Fore.CYAN} / {Fore.RESET}]{Fore.CYAN}').replace('[-]', f'[{Fore.RED} - {Fore.RESET}]{Fore.CYAN}')
                 lock.acquire()
