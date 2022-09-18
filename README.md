@@ -28,7 +28,6 @@ This file contains the important code at line 38.
 
 2. If you got a great idea to improve this code, pull a request or hit me up on discord (You can find it in the end of this readme).
 
-3. Most importantly, if any error occured and the output **did not show** `Deleting images which i downloaded`. You will find the images in folder `data > captcha_temp_images`. Open an issue with the output and images.
 
 ##### Errors you might get:
 1. **Max ssl error**, i have no idea how to solve it rather than putting a time.sleep at line 131 before making request in `modules > hcaptcha > challenges.py`
