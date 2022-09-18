@@ -10,6 +10,9 @@ import requests
 from modules.ai_finder.solutions import  resnet, yolo
 from pathlib import Path
 
+from PIL import Image
+from io import BytesIO
+
 
 path_objects_yaml = './modules/ai_finder/objects.yaml'
 
@@ -39,15 +42,12 @@ class CaptchaSolver:
             global pluggable_onnx_models
             global yolo_model
             global label_alias 
-            mypath  = "./data/captcha_temp_images"
             count = 0
 
             # {{< IMAGE CLASSIFICATION >}}
-            with open(mypath+"/"+alias+".png", "rb") as file:
-                data = file.read()
             result = None
-            #AI PART from hcaptcha-challenger
-            result = model.solution(img_stream=data, label=label_alias[label])
+            result = model.solution(img_stream=alias, label=label_alias[label])
+
             return result
             
     @staticmethod
@@ -78,22 +78,14 @@ class CaptchaSolver:
 
             ### Downlowds hcaptcha images, wrote the code for testing the new models.            
             url = tile.url
-            # Console.debug(f"[-] Stored Image ")
-            req = requests.get(url, stream = True)
-            with open("./data/captcha_temp_images/"+ "image_" +str(count) + ".png", 'wb') as f:
-                for chunk in req.iter_content(chunk_size=1024):
-                    if chunk:
-                        f.write(chunk)
-
-            #alias will be our file name                        
-            alias = "image_" +str(count)                    
+            alias = requests.get(url).content                  
             count +=1
 
             solution = CaptchaSolver.switch_solution(label)
             if solution != "n" or result != None:                
                 result = CaptchaSolver.challenge(solution,alias, label)
                 #True means correct, false means wrong image
-                Console.debug(f"[+] Image Name: {alias}, Result: {result}")
+                Console.debug(f"[+] Image Number: {count}, Result: {result}")
             else:
                 Console.info(f"[+] AI not trained for this captcha type yet !!!")
                 break
@@ -102,13 +94,8 @@ class CaptchaSolver:
         try:
             Console.debug(f"[+] Solving Captcha by Choosing Images Now.")
             token = ch.solve(answers)
-            Console.debug(f"[*] Deleting Images which i downloaded")
-            [f.unlink() for f in Path("./data/captcha_temp_images/").glob("*") if f.is_file()] 
             return token
         except hcaptcha.ApiError as e:
-            # print("Api Error")
-
             #This is where the captcha fails. means its solved but wrong images are chosen
             Console.debug(f"[-] Captcha solved but wrong, Retrying...")
-
-            
+            time.sleep(2)
