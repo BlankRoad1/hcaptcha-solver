@@ -7,6 +7,7 @@ matplotlib
 pystyle
 colorama
 pytweening
+socks
 redisc
 keyboard
 websocket
