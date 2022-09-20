@@ -79,10 +79,11 @@ class CaptchaSolver:
             count +=1
 
             solution = CaptchaSolver.switch_solution(label)
-            if solution != "n" or result != None:                
+            if solution != "n":
                 result = CaptchaSolver.challenge(solution,alias, label)
+                if result != None:                
                 #True means correct, false means wrong image
-                Console.debug(f"[+] Image Number: {count}, Result: {result}")
+                    Console.debug(f"[+] Image Number: {count}, Result: {result}")
             else:
                 Console.info(f"[+] AI not trained for this captcha type yet !!!")
                 break
