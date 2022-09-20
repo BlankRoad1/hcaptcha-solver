@@ -63,7 +63,7 @@ I modifed a couple of github codes. The fastest one i could come across was [thi
 
 ### Hcaptcha Requests Reference:
 For sure one thing i knew that the code used in [this repo](https://github.com/imvast/Discord-Account-Creator  "this repo") wasn't his work. 
-Looking at the code, Its a piece of art and good amount of hardwork done on getting **each element** of the requests made by hcaptcha, which will stay forever on walls of github. 
+Looking at the code, Its a piece of art which will stay forever on walls of github and good amount of hardwork done on getting **each element** of the requests made by hcaptcha. 
 
 Someone from github reached out to me and shared info about the [real author](https://github.com/h0nde/  "real author") whose repo has been deleted off github due to which i won't be able to reference to his work but found the [orginal repo](https://github.com/AcierP/py-hcaptcha  "orginal repo")  which identified as **h0nde** work. More info about h0nde can be found [here](https://www.reddit.com/r/discordapp/comments/nuz8jj/so_h0nde_has_made_an_account_using_your_email/).
 
