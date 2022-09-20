@@ -33,10 +33,6 @@ This file contains the important code at line 38.
 2. ignore error alike: **No models has been trained for such type of captcha yet.**
 
 
-##### Ai Captcha Solver Reference:
-1.  I modifed a couple of github codes. The fastest one i could come across was [this one](https://github.com/QIN2DIM/hcaptcha-challenger  "this one"). 
- His models dont have enough images, But still it works alot better than others. 
-
 ##### Some Proofs
 Solves captcha in 10 Seconds.
 ![success_test1](https://user-images.githubusercontent.com/105941365/190708068-4bb95bdd-b6a2-41a6-9e9b-244cdc69c181.png)
@@ -60,6 +56,17 @@ Solves captcha in 10 Seconds.
 
 ### Reason why i started working on this project ?
 I used many paid api's capmonster, anti-captcha, bought from github users, All of them had solving time of 15 to 30 seconds. Every one claims we are coming with a v2 update, then scams you!. Some sell outdated codes, and if you ask why it takes time. They ask you to Buy HQ proxies from them.
+
+##### Ai Captcha Solver Reference:
+I modifed a couple of github codes. The fastest one i could come across was [this one](https://github.com/QIN2DIM/hcaptcha-challenger  "this one"). 
+ His models dont have enough images, But still it works alot better than others. 
+
+##### Hcaptcha Requests Reference:
+For sure one thing i knew that the code used in [this repo](https://github.com/imvast/Discord-Account-Creator  "this repo") wasn't his work. 
+Looking at the code, Its a piece of art and good amount of hardwork done on getting **each element** of the requests made by hcaptcha, which will stay forever on walls of github. 
+
+Someone from github reached out to me and shared info about the [real author](https://github.com/h0nde/  "real author") whose repo has been deleted off github due to which i won't be able to reference to his work but found the [orginal repo](https://github.com/AcierP/py-hcaptcha  "orginal repo")  which identified as **h0nde** work. More info about h0nde can be found [here](https://www.reddit.com/r/discordapp/comments/nuz8jj/so_h0nde_has_made_an_account_using_your_email/).
+
 
 ### Contributions:
 - Assigning images to variable rather than downloading and storing them on disk: [MaxAndolini](https://github.com/MaxAndolini "MaxAndolini")
