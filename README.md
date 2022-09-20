@@ -57,11 +57,11 @@ Solves captcha in 10 Seconds.
 ### Reason why i started working on this project ?
 I used many paid api's capmonster, anti-captcha, bought from github users, All of them had solving time of 15 to 30 seconds. Every one claims we are coming with a v2 update, then scams you!. Some sell outdated codes, and if you ask why it takes time. They ask you to Buy HQ proxies from them.
 
-##### Ai Captcha Solver Reference:
+### Ai Captcha Solver Reference:
 I modifed a couple of github codes. The fastest one i could come across was [this one](https://github.com/QIN2DIM/hcaptcha-challenger  "this one"). 
  His models dont have enough images, But still it works alot better than others. 
 
-##### Hcaptcha Requests Reference:
+### Hcaptcha Requests Reference:
 For sure one thing i knew that the code used in [this repo](https://github.com/imvast/Discord-Account-Creator  "this repo") wasn't his work. 
 Looking at the code, Its a piece of art and good amount of hardwork done on getting **each element** of the requests made by hcaptcha, which will stay forever on walls of github. 
 
