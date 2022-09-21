@@ -71,5 +71,5 @@ Someone from github reached out to me and shared info about the [real author](ht
 ### Contributions:
 - Assigning images to variable rather than downloading and storing them on disk: [MaxAndolini](https://github.com/MaxAndolini "MaxAndolini")
 
-## If you got hcaptcha datasets, and would like to donate or give them to me for free, hit me up on my discord: Zerf#7071 
+## If you got FUNCaptcha ORGANIZED datasets, and would like to donate or give them to me for free, hit me up on my discord: Zerf#7071 
 
