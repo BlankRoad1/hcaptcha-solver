@@ -208,4 +208,13 @@ label_alias:
   turtle:
     zh: [ "海龟" ]
     en: [ "turtle" ]
-    
+
+  turtle_under_the_water:
+    zh: [ "水下乌龟" ]
+    en: [ "turtle under the water" ]
+  toy_turtle:
+    zh: [ "玩具乌龟" ]
+    en: [ "toy turtle" ]
+  turtle_in_the_grass:
+    zh: [ "草丛中包含乌龟" ]
+    en: [ "turtle in the grass" ]
