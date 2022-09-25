@@ -1,5 +1,6 @@
 # hcaptcha-solver
 ## Say GoodBye to Paid Hcaptcha Solvers.
+I modified two already available codes at github and made this captcha solver. Check out the [references](https://github.com/DsCookieMaster/hcaptcha-solver#ai-captcha-solver-reference).
 Rather than opening a browser and solving hcaptcha, this code **sovles hcaptcha by sending requests**. This way you will get the captcha_key or token easily.
 
 **Main.py** is initially coded to print the captcha_key upon successfully solving hcaptcha But you can edit it as you like.
