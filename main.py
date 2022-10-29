@@ -6,8 +6,10 @@ from modules.console import Console
 
 
 
-# discord
+# site key
 website_key_captcha="4c672d35-0701-42b2-88c3-78380b0db560"
+
+# site url. Please add http:// with the url. such as abc.com so write http://abc.com
 website_URL_captcha="http://discord.com"
 
 
