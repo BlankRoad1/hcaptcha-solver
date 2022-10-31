@@ -49,6 +49,10 @@ class CaptchaSolver:
             
     @staticmethod
     def get_captcha_by_ai(siteky, host ,proxy: str):
+        
+        if "http://" not in host:
+            host = "http://"+host
+        
         Console.debug("[*] SOLVING...")
         ch = hcaptcha.Challenge(
             sitekey=siteky,
