@@ -11,7 +11,7 @@ print("1. Goto https://api.github.com/repos/QIN2DIM/hcaptcha-challenger/releases
 print("." * 50)
 
 # #==============================================================================
-# #----------------------- Download models in model folder
+#----------------------- Download models in model folder
 
 print("Download all AI Files...")
 r = requests.get(
@@ -105,12 +105,13 @@ elif current_ObjectYaml[len(current_ObjectYaml) - 1] != objects_QIN2DIM[len(obje
     else:
         #get index of both
         for idx, line in enumerate(current_ObjectYaml):
-            if object_C in line:
+            if object_C.strip() in line:
                     index_curr_object = idx
                     # print("Start Index Current Object: ",idx,"| Value: ", line)
 
         for idx, line in enumerate(objects_QIN2DIM):
-            if object_C in line:
+            temp = object_C.strip()
+            if  temp in line:
                     index_qin2dim_objects = idx + 1
                     # print("Start Index QIN2DIM Object: ",idx,"| Value: ", line)
         
@@ -134,3 +135,5 @@ elif current_ObjectYaml[len(current_ObjectYaml) - 1] != objects_QIN2DIM[len(obje
             print("Updated Objects.yaml")        
         else:
             print("Nothing to update in Objects.yaml")
+else:
+    print("Nothing to update in Objects.yaml")
