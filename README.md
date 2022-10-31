@@ -7,18 +7,13 @@ Rather than opening a browser and solving hcaptcha, this code **sovles hcaptcha 
 
 ## Installation
 - Run the file named **install_requirements.bat**, it will install all the necessary `requirements` for this code.
-- Run the file named **downloadorUpdate_models.bat**, it will download all the `models for the ai captcha solver.`
+- Run the file named **Download_Update.bat**, it will download all the `models for the ai captcha solver` and also update the labels in `modules>ai_finder>objects.yaml` file.
 - you need a chromedriver. Based on your chrome version:
        Goto your chrome installation folder, usually its installed in `C:\Program Files\Google\Chrome\Application`. You must find a folder named something like this 105.0.5195.127, it can be different for you. Thats your chrome version. 
 	   Goto [chrome driver download](https://chromedriver.chromium.org/downloads "chrome driver download") and download your chrome driver. Paste it in **data** folder.
 - **Optional:** You need some good **proxies** for the requests sent. You can find them at [proxy scrapper](https://github.com/DsCookieMaster/hcaptcah-proxy-scraper-checker "proxy scrapper"). It wills scrap proxies for hcaptcha site. Add the proxies to **proxies.txt file** in **data folder**. **Format IP:PORT**
 - To test the captcha solver, Run the file named **run_program.bat**.
 
-## Some updates you need to do manually
-You need to **keep objects.yaml updated** incase any new models has been added.
-1. Goto `modules > ai_finder`, open objects.yaml with notepad. 
-2. Goto [updated objects.yaml](https://raw.githubusercontent.com/QIN2DIM/hcaptcha-challenger/main/src/objects.yaml "updated objects.yaml").
-3. Compare the **last lines** of the link with objects.yaml file. If they are different, add them to the end of objects.yaml and save.
 
 ## main.py
 This file contains the important code at line 38.
