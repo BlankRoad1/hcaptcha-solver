@@ -27,7 +27,6 @@ This file contains the important code at line 38.
 ##### Errors you might get:
 1. **Max ssl error**, i have no idea how to solve it rather than putting a time.sleep at line 131 before making request in `modules > hcaptcha > challenges.py`
 2. ignore error alike: **No models has been trained for such type of captcha yet.**
-3. Invalid captcha or the repo not working. Try checking your site_url. Maybe you entered a url without the **http://**
 
 
 ##### Some Proofs
