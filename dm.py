@@ -135,5 +135,6 @@ elif current_ObjectYaml[len(current_ObjectYaml) - 1] != objects_QIN2DIM[len(obje
             print("Updated Objects.yaml")        
         else:
             print("Nothing to update in Objects.yaml")
+            
 else:
     print("Nothing to update in Objects.yaml")
