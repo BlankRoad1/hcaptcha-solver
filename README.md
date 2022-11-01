@@ -1,6 +1,6 @@
 # hcaptcha-solver
 ## Say GoodBye to Paid Hcaptcha Solvers.
-I modified two already available codes at github and made this captcha solver. Check out the [references](https://github.com/DsCookieMaster/hcaptcha-solver#ai-captcha-solver-reference).
+I modified two already available codes at github and made this captcha solver. Check out the [references](https://github.com/kokiez/hcaptcha-solver#ai-captcha-solver-reference).
 Rather than opening a browser and solving hcaptcha, this code **sovles hcaptcha by sending requests**. This way you will get the captcha_key or token easily.
 
 **Main.py** is initially coded to print the captcha_key upon successfully solving hcaptcha But you can edit it as you like.
@@ -11,7 +11,7 @@ Rather than opening a browser and solving hcaptcha, this code **sovles hcaptcha 
 - you need a chromedriver. Based on your chrome version:
        Goto your chrome installation folder, usually its installed in `C:\Program Files\Google\Chrome\Application`. You must find a folder named something like this 105.0.5195.127, it can be different for you. Thats your chrome version. 
 	   Goto [chrome driver download](https://chromedriver.chromium.org/downloads "chrome driver download") and download your chrome driver. Paste it in **data** folder.
-- **Optional:** You need some good **proxies** for the requests sent. You can find them at [proxy scrapper](https://github.com/DsCookieMaster/hcaptcah-proxy-scraper-checker "proxy scrapper"). It wills scrap proxies for hcaptcha site. Add the proxies to **proxies.txt file** in **data folder**. **Format IP:PORT**
+- **Optional:** You need some good **proxies** for the requests sent. You can find them at [proxy scrapper](https://github.com/kokiez/hcaptcah-proxy-scraper-checker "proxy scrapper"). It wills scrap proxies for hcaptcha site. Add the proxies to **proxies.txt file** in **data folder**. **Format IP:PORT**
 - To test the captcha solver, Run the file named **run_program.bat**.
 
 
