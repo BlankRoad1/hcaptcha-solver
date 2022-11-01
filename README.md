@@ -16,7 +16,7 @@ Rather than opening a browser and solving hcaptcha, this code **sovles hcaptcha 
 
 
 ## main.py
-This file contains the important code at line 38.
+This file contains the important code at line 40.
 
 ### Issues or great ideas to improve code
 1. If you faced any `unknown errors`, **First search them in stackoverflow**. If not found,* Open an issue in this repo.*
