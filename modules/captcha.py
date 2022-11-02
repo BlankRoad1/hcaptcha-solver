@@ -89,7 +89,7 @@ class CaptchaSolver:
                 #True means correct, false means wrong image
                     Console.debug(f"[+] Image Number: {count}, Result: {result}")
             else:
-                Console.info(f"[+] AI not trained for this captcha type yet !!!")
+                Console.info(f"[+] AI not trained for this captcha type yet !\nRun the Download_Update.bat to check for updates")
                 break
             if result == True:
                 answers.append(tile)
