@@ -26,7 +26,6 @@ This file contains the important code at line 40.
 
 ##### Errors you might get:
 1. **Max ssl error**, i have no idea how to solve it rather than putting a time.sleep at line 131 before making request in `modules > hcaptcha > challenges.py`
-2. ignore error alike: **No models has been trained for such type of captcha yet.**
 
 
 ##### Some Proofs
@@ -67,5 +66,5 @@ Someone from github reached out to me and shared info about the [real author](ht
 ### Contributions:
 - Assigning images to variable rather than downloading and storing them on disk: [MaxAndolini](https://github.com/MaxAndolini "MaxAndolini")
 
-## Discord: Zerf#7071 
+## Discord: kokiez#7071 
 
