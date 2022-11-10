@@ -66,5 +66,9 @@ Someone from github reached out to me and shared info about the [real author](ht
 ### Contributions:
 - Assigning images to variable rather than downloading and storing them on disk: [MaxAndolini](https://github.com/MaxAndolini "MaxAndolini")
 
-## Discord: kokiez#7071 
+## Donations:
+
+1. **Bitcoin Address:** `1CaR49e4YnsqUALxsSds7PeyZhiDBpussK` Network: `Bitcoin`
+2. **USDT Address:** `TQCdnhXQHmKSgR2z4nmGMPGovR36V5XMLp` Network: `Trc20`
+3. **BUSD Address:** `0xe9c9effb32da72f3bb28fb102c5497046ab9a59d` Network: `BEP20`
 
