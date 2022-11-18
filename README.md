@@ -1,6 +1,7 @@
 # hcaptcha-solver
-# Will re-up it soon!
+
 # Dead Code!
+# Will re-up it soon!
 -------------------
 
 ## Say GoodBye to Paid Hcaptcha Solvers.
