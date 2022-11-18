@@ -7,7 +7,7 @@ dir_objects = os.path.join("./modules/ai_finder/objects.yaml")
 
 
 print("If any error caused while processing, you have to do the following steps manually: ")
-print("1. Goto https://api.github.com/repos/rofaya/hcaptcha-challenger/releases and download all the files. \n2. Create a folder model in data and paste them in model folder.\n3. Goto https://raw.githubusercontent.com/QIN2DIM/hcaptcha-challenger/main/src/objects.yaml\n4. Copy all content from 'seaplane:' till end and paste them in ./modules/ai_finder/objects.yaml file.")
+print("1. Goto https://api.github.com/repos/rofaya/hcaptcha-challenger/releases and download all the files. \n2. Create a folder model in data and paste them in model folder.\n3. Goto https://raw.githubusercontent.com/rofaya/hcaptcha-challenger/main/src/objects.yaml\n4. Copy all content from 'seaplane:' till end and paste them in ./modules/ai_finder/objects.yaml file.")
 print("." * 50)
 
 # #==============================================================================
