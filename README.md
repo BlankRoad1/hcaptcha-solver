@@ -1,7 +1,6 @@
 # hcaptcha-solver
 
-# Dead Code!
-# Will re-up it soon!
+# Working: 100%
 -------------------
 
 ## Say GoodBye to Paid Hcaptcha Solvers.
@@ -59,7 +58,8 @@ I used many paid api's capmonster, anti-captcha, bought from github users, All o
 
 ### Ai Captcha Solver Reference:
 I modifed a couple of github codes. The fastest one i could come across was [this one](https://github.com/QIN2DIM/hcaptcha-challenger  "this one"). 
- His models dont have enough images, But still it works alot better than others. 
+His/her models dont have enough images, But still it works alot better than others. 
+Looks like QIN2DIM repo got ripped off github's face. But his/her project on [pypi](https://pypi.org/project/hcaptcha-challenger/) helped getting back those models and bringing this project alive.
 
 ### Hcaptcha Requests Reference:
 For sure one thing i knew that the code used in [this repo](https://github.com/imvast/Discord-Account-Creator  "this repo") wasn't his work. 
