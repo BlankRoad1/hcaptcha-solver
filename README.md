@@ -57,7 +57,7 @@ Solves captcha in 10 Seconds.
 I used many paid api's capmonster, anti-captcha, bought from github users, All of them had solving time of 15 to 30 seconds. Every one claims we are coming with a v2 update, then scams you!. Some sell outdated codes, and if you ask why it takes time. They ask you to Buy HQ proxies from them.
 
 ### Ai Captcha Solver Reference:
-I modifed a couple of github codes. The fastest one i could come across was [this one](https://github.com/QIN2DIM/hcaptcha-challenger  "this one"). 
+I modifed a couple of github codes. The fastest one i could come across was by [QIN2DIM](https://github.com/QIN2DIM/hcaptcha-challenger  "this one"). 
 His/her models dont have enough images, But still it works alot better than others. 
 Looks like QIN2DIM repo got ripped off github's face. But his/her project on [pypi](https://pypi.org/project/hcaptcha-challenger/) helped getting back those models and bringing this project alive.
 
