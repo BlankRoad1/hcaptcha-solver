@@ -59,6 +59,7 @@ I used many paid api's capmonster, anti-captcha, bought from github users, All o
 ### Ai Captcha Solver Reference:
 I modifed a couple of github codes. The fastest one i could come across was by [QIN2DIM](https://github.com/QIN2DIM/hcaptcha-challenger  "this one"). 
 His/her models dont have enough images, But still it works alot better than others. 
+
 Looks like QIN2DIM repo got ripped off github's face. But his/her project on [pypi](https://pypi.org/project/hcaptcha-challenger/) helped getting back those models and bringing this project alive.
 
 ### Hcaptcha Requests Reference:
