@@ -30,7 +30,9 @@ Rather than opening a browser and solving hcaptcha, this code **sovles hcaptcha 
 
 ### Want to Improve Models?
 **How to:** Text official owner of the Ai Captcha Solver, Link to pypi project: **[Click me](https://pypi.org/project/hcaptcha-challenger/)**.
+
 **Fact:** Nothing is Perfect.
+
 **Detail of Fact:** No matter how many times you improve the models, hcaptcha will add another single picture and your hours of hardwork/perfect solver will be gone to waste. So, when you got a free working hcaptcha solver and not paying a penny, why improve them?.
 
 ### Errors you might get:
