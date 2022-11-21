@@ -19,7 +19,9 @@ Rather than opening a browser and solving hcaptcha, this code **sovles hcaptcha 
 
 ## Important piece of code
 `from modules.captcha import CaptchaSolver
-from modules.console import Console`
+
+from modules.console import Console
+
 token = CaptchaSolver.get_captcha_by_ai("4c672d35-0701-42b2-88c3-78380b0db560", "http://discord.com" ,"1.1.1.1:8080")`
 
 ### Issues or great ideas to improve code
