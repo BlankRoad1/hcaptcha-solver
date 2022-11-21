@@ -7,8 +7,6 @@
 I modified two already available codes at github and made this captcha solver. Check out the [references](https://github.com/kokiez/hcaptcha-solver#ai-captcha-solver-reference).
 Rather than opening a browser and solving hcaptcha, this code **sovles hcaptcha by sending requests**. This way you will get the captcha_key or token easily.
 
-**Main.py** is initially coded to print the captcha_key upon successfully solving hcaptcha But you can edit it as you like.
-
 ## Installation
 - Run the file named **install_requirements.bat**, it will install all the necessary `requirements` for this code.
 - Run the file named **Download_Update.bat**, it will download all the `models for the ai captcha solver` and also update the labels in `modules>ai_finder>objects.yaml` file.
@@ -19,20 +17,24 @@ Rather than opening a browser and solving hcaptcha, this code **sovles hcaptcha 
 - To test the captcha solver, Run the file named **run_program.bat**.
 
 
-## main.py
-This file contains the important code at line 40.
+## Important piece of code
+`from modules.captcha import CaptchaSolver`
+`from modules.console import Console`
+`token = CaptchaSolver.get_captcha_by_ai("4c672d35-0701-42b2-88c3-78380b0db560", "http://discord.com" ,"1.1.1.1:8080")`
 
 ### Issues or great ideas to improve code
-1. If you faced any `unknown errors`, **First search them in stackoverflow**. If not found,* Open an issue in this repo.*
+1. [FAQS](https://github.com/kokiez/hcaptcha-solver/issues?q=is%3Aissue+is%3Aclosed)
+2. If you got a great idea to improve this code, pull a request or hit me up on discord
 
-2. If you got a great idea to improve this code, pull a request or hit me up on discord (You can find it in the end of this readme).
+### Want to Improve Models?
+**How to:** Text official owner of the Ai Captcha Solver, Link to pypi project: **[Click me](https://pypi.org/project/hcaptcha-challenger/)**.
+**Fact:** Nothing is Perfect.
+**Detail of Fact:** No matter how many times you improve the models, hcaptcha will add another single picture and your hours of hardwork/perfect solver will be gone to waste. So, when you got a free working hcaptcha solver and not paying a penny, why improve them?.
 
+### Errors you might get:
+1. **Max ssl error**, i have no idea how to solve it rather than putting a time.sleep at line 127 before making request in `modules > hcaptcha > challenges.py`
 
-##### Errors you might get:
-1. **Max ssl error**, i have no idea how to solve it rather than putting a time.sleep at line 131 before making request in `modules > hcaptcha > challenges.py`
-
-
-##### Some Proofs
+### Some Proofs
 Solves captcha in 10 Seconds.
 ![success_test1](https://user-images.githubusercontent.com/105941365/190708068-4bb95bdd-b6a2-41a6-9e9b-244cdc69c181.png)
 
@@ -49,9 +51,6 @@ Solves captcha in 10 Seconds.
 ![success_test4](3.png)
 
 ------------
-
-
-
 
 ### Reason why i started working on this project ?
 I used many paid api's capmonster, anti-captcha, bought from github users, All of them had solving time of 15 to 30 seconds. Every one claims we are coming with a v2 update, then scams you!. Some sell outdated codes, and if you ask why it takes time. They ask you to Buy HQ proxies from them.
@@ -77,4 +76,3 @@ Someone from github reached out to me and shared info about the [real author](ht
 1. **Bitcoin Address:** `1CaR49e4YnsqUALxsSds7PeyZhiDBpussK` Network: `Bitcoin`
 2. **USDT Address:** `TQCdnhXQHmKSgR2z4nmGMPGovR36V5XMLp` Network: `Trc20`
 3. **BUSD Address:** `0xe9c9effb32da72f3bb28fb102c5497046ab9a59d` Network: `BEP20`
-
