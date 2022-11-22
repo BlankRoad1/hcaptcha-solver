@@ -4,7 +4,9 @@ from keras.models import load_model
 tf.debugging.disable_traceback_filtering()
 import numpy as np
 from . import hcaptcha
+
 from .console import Console
+from .utf_decoder import unicode_Coversion
 import requests
 
 from modules.ai_finder.solutions import  resnet, yolo
@@ -73,6 +75,15 @@ class CaptchaSolver:
             else:
                 question = question.replace("Please click each image containing","")
             label = question.replace(".","")
+
+        #Converting unicode letters in label to Latin/Normal Alphabets
+        for alphabet in label:
+            if "\\" in str(alphabet.encode('utf-8')):
+                convertedALphabet = unicode_Coversion(alphabet.encode('utf-8'))
+                label = label.replace(alphabet,convertedALphabet)
+
+        Console.debug("[*] Modified Label: "+label)
+
         answers = []
         count = 0
         for tile in ch.tasks:
