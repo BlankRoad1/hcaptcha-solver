@@ -7,7 +7,7 @@ from modules.console import Console
 
 
 # site key
-website_key_captcha="4c672d35-0701-42b2-88c3-78380b0db560"
+website_key_captcha="f5561ba9-8f1e-40ca-9b5b-a0b3f719ef34"
 
 # site url. Please add http:// with the url. such as abc.com so write http://abc.com
 website_URL_captcha="http://discord.com"
