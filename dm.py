@@ -7,7 +7,7 @@ dir_objects = os.path.join("./modules/ai_finder/objects.yaml")
 
 
 print("If any error caused while processing, you have to do the following steps manually: ")
-print("1. Goto https://api.github.com/repos/rofaya/hcaptcha-challenger/releases and download all the files. \n2. Create a folder model in data and paste them in model folder.\n3. Goto https://raw.githubusercontent.com/rofaya/hcaptcha-challenger/main/src/objects.yaml\n4. Copy all content from 'seaplane:' till end and paste them in ./modules/ai_finder/objects.yaml file.")
+print("1. Goto https://api.github.com/repos/QIN2DIM/hcaptcha-challenger/releases and download all the files. \n2. Create a folder model in data and paste them in model folder.\n3. Goto https://raw.githubusercontent.com/QIN2DIM/hcaptcha-challenger/main/src/objects.yaml\n4. Copy all content from 'seaplane:' till end and paste them in ./modules/ai_finder/objects.yaml file.")
 print("." * 50)
 
 # #==============================================================================
@@ -15,7 +15,7 @@ print("." * 50)
 
 print("Download all AI Files...")
 r = requests.get(
-    "https://api.github.com/repos/rofaya/hcaptcha-challenger/releases")
+    "https://api.github.com/repos/QIN2DIM/hcaptcha-challenger/releases")
 for asset in r.json()[0].get("assets"):
     url = asset.get("browser_download_url")
     name = asset.get("name")
@@ -58,7 +58,7 @@ modifedV = current_ObjectYaml
 
 
 #read from the link
-objects_QIN2DIM = requests.get("https://raw.githubusercontent.com/rofaya/hcaptcha-challenger/main/src/objects.yaml").text.split("\n")
+objects_QIN2DIM = requests.get("https://raw.githubusercontent.com/QIN2DIM/hcaptcha-challenger/main/src/objects.yaml").text.split("\n")
 
 #some useless variables
 index_curr_object = 0
