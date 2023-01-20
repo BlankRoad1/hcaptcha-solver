@@ -2,7 +2,7 @@
 
 ## Say GoodBye to Paid Hcaptcha Solvers.
 ### Since Qin2dim repo is back. I will archieve this repo.
-I modified two already available codes at github and made this captcha solver. Check out the [references](https://github.com/kokiez/hcaptcha-solver#ai-captcha-solver-reference).
+I modified two already available codes at github and made this captcha solver. Check out the [references](https://github.com/BlankRoad1/hcaptcha-solver#ai-captcha-solver-reference).
 Rather than opening a browser and solving hcaptcha, this code **sovles hcaptcha by sending requests**. This way you will get the captcha_key or token easily.
 
 ## Installation
@@ -11,7 +11,7 @@ Rather than opening a browser and solving hcaptcha, this code **sovles hcaptcha 
 - you need a chromedriver. Based on your chrome version:
        Goto your chrome installation folder, usually its installed in `C:\Program Files\Google\Chrome\Application`. You must find a folder named something like this 105.0.5195.127, it can be different for you. Thats your chrome version. 
 	   Goto [chrome driver download](https://chromedriver.chromium.org/downloads "chrome driver download") and download your chrome driver. Paste it in **data** folder.
-- **Optional:** You need some good **proxies** for the requests sent. You can find them at [proxy scrapper](https://github.com/kokiez/hcaptcah-proxy-scraper-checker "proxy scrapper"). It wills scrap proxies for hcaptcha site. Add the proxies to **proxies.txt file** in **data folder**. **Format IP:PORT**
+- **Optional:** You need some good **proxies** for the requests sent. You can find them at [proxy scrapper](https://github.com/BlankRoad1/hcaptcah-proxy-scraper-checker "proxy scrapper"). It wills scrap proxies for hcaptcha site. Add the proxies to **proxies.txt file** in **data folder**. **Format IP:PORT**
 - To test the captcha solver, Run the file named **run_program.bat**.
 
 
@@ -23,7 +23,7 @@ Rather than opening a browser and solving hcaptcha, this code **sovles hcaptcha 
 `token = CaptchaSolver.get_captcha_by_ai("4c672d35-0701-42b2-88c3-78380b0db560", "http://discord.com" ,"1.1.1.1:8080")`
 
 ### Issues or great ideas to improve code
-1. [FAQS](https://github.com/kokiez/hcaptcha-solver/issues?q=is%3Aissue+is%3Aclosed)
+1. [FAQS](https://github.com/BlankRoad1/hcaptcha-solver/issues?q=is%3Aissue+is%3Aclosed)
 2. If you got a great idea to improve this code, pull a request or hit me up on discord
 
 ### Want to Improve Models?
@@ -70,11 +70,9 @@ Looking at the code, Its a piece of art which will stay forever on walls of gith
 Someone from github reached out to me and shared info about the [real author](https://github.com/h0nde/  "real author") whose repo has been deleted off github due to which i won't be able to reference to his work but found the [orginal repo](https://github.com/AcierP/py-hcaptcha  "orginal repo")  which identified as **h0nde** work. More info about h0nde can be found [here](https://www.reddit.com/r/discordapp/comments/nuz8jj/so_h0nde_has_made_an_account_using_your_email/).
 
 
-### Contributions:
-- Assigning images to variable rather than downloading and storing them on disk: [MaxAndolini](https://github.com/MaxAndolini "MaxAndolini")
 
-## Donations:
 
-1. **Bitcoin Address:** `1CaR49e4YnsqUALxsSds7PeyZhiDBpussK` Network: `Bitcoin`
-2. **USDT Address:** `TQCdnhXQHmKSgR2z4nmGMPGovR36V5XMLp` Network: `Trc20`
-3. **BUSD Address:** `0xe9c9effb32da72f3bb28fb102c5497046ab9a59d` Network: `BEP20`
+
+
+
+
