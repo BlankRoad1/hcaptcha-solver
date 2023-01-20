@@ -11,7 +11,7 @@ Rather than opening a browser and solving hcaptcha, this code **sovles hcaptcha 
 - you need a chromedriver. Based on your chrome version:
        Goto your chrome installation folder, usually its installed in `C:\Program Files\Google\Chrome\Application`. You must find a folder named something like this 105.0.5195.127, it can be different for you. Thats your chrome version. 
 	   Goto [chrome driver download](https://chromedriver.chromium.org/downloads "chrome driver download") and download your chrome driver. Paste it in **data** folder.
-- **Optional:** You need some good **proxies** for the requests sent. You can find them at [proxy scrapper](https://github.com/BlankRoad1/hcaptcah-proxy-scraper-checker "proxy scrapper"). It wills scrap proxies for hcaptcha site. Add the proxies to **proxies.txt file** in **data folder**. **Format IP:PORT**
+- **Optional:** You need some good **proxies** for the requests sent. You can find them at [proxy scrapper](https://github.com/BlankRoad1/proxy-scraper-checker "proxy scrapper"). It wills scrap proxies for hcaptcha site. Add the proxies to **proxies.txt file** in **data folder**. **Format IP:PORT**
 - To test the captcha solver, Run the file named **run_program.bat**.
 
 
